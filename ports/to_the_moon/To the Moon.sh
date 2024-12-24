@@ -56,9 +56,9 @@ fi
 
 # Run minilauncher
 chmod +x ./love
+FOLDER=$(<selected_game.txt)
 $GPTOKEYB "love" &
 ./love minilauncher
-FOLDER=$(<selected_game.txt)
 
 # Cleanup minilauncher
 $ESUDO kill -9 $(pidof gptokeyb)
